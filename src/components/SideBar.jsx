@@ -1,12 +1,21 @@
 import React from 'react'
 
-export default function SideBar() {
+export default function SideBar(props) {
+
+  const {handleToggleModel} = props
+
   return (
-    <div>
-        <h2>The Brutal Martian Landscape</h2>
-        <div>
-            <p>Description</p>
-            <p>dfddddd</p>
+    <div className='sidebar'>
+      <div className='bgOverlay'></div>
+        <div className='sidebarContents'>
+          <h2>The Brutal Martian Landscape</h2>
+          <div>
+              <p>Description</p>
+              <p>dfddddd</p>
+          </div>
+          <button onClick={handleToggleModel}>
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
     </div>
   )
