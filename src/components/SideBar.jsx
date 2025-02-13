@@ -2,18 +2,18 @@ import React from 'react'
 
 export default function SideBar(props) {
 
-  const {handleToggleModel} = props
+  const {handleToggleModal,data} = props
 
   return (
     <div className='sidebar'>
-      <div className='bgOverlay'></div>
+      <div className='bgOverlay' onClick={handleToggleModal}></div>
         <div className='sidebarContents'>
-          <h2>The Brutal Martian Landscape</h2>
-          <div>
-              <p>Description</p>
-              <p>dfddddd</p>
+          <h2>{data?.title}</h2>
+          <div className='descriptionContainer'>
+              <p className='descriptionTitle'>{data?.date}</p>
+              <p>{data?.explanation}</p>
           </div>
-          <button onClick={handleToggleModel}>
+          <button onClick={handleToggleModal}>
             <i className="fa-solid fa-arrow-right"></i>
           </button>
         </div>
