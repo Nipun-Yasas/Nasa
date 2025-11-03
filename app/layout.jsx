@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'NASA APOD Project',
+  title: 'Cosmic view',
   description: 'NASA Astronomy Picture of the Day - Explore the cosmos with stunning daily space images',
   icons: {
     icon: '/icon.svg',
