@@ -1,8 +1,40 @@
-# React + Vite
+# NASA APOD Project - Next.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Next.js project that displays NASA's Astronomy Picture of the Day (APOD).
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, create a `.env.local` file in the root directory and add your NASA API key:
+
+```
+NEXT_PUBLIC_NASA_API_KEY=your_api_key_here
+```
+
+You can get a free API key from [NASA's API portal](https://api.nasa.gov/).
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Features
+
+- Displays NASA's Astronomy Picture of the Day
+- Caches data in localStorage
+- Responsive design
+- Modal sidebar with detailed information
+
+## Tech Stack
+
+- Next.js 14
+- React 18
+- Font Awesome icons
